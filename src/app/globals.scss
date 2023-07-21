@@ -1,0 +1,143 @@
+:root {
+	--text-color: #33272a;
+	--background-color: #faeee7;
+	--headline-color: #33272a;
+	--paragraph-color: #594a4e;
+	--pink-color: #ff8ba7;
+	--button-text-color: #33272a;
+	--dark-shade: rgba(59, 59, 59, 0.1);
+	--light-shade: rgba(80, 80, 80, 0.2);
+	--font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+		Helvetica Neue, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: var(--font-family);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.container {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+	& > div {
+		max-width: 110em;
+	}
+
+	.particles {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: -1;
+		max-width: 100%;
+	}
+}
+
+.about {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 60px;
+	gap: 3em;
+	position: relative;
+
+	.about_info {
+		margin-right: auto;
+		max-width: 50em;
+
+		h1{
+			margin: 20px 0;
+		}
+		
+		p {
+			font-size: 1.2em;
+		}
+
+		.resume {
+			font-size: 1.4em;
+			color: var(--pink-color);
+			margin: 20px 0;
+
+			.tooltip-svg {
+				transform: translateY(4px);
+			}
+		}
+	}
+
+	.about_img {
+		animation: morph 8s ease-in-out infinite;
+		background-image: url('../../public/images/profile.jpg');
+		background-position-x: 54%;
+		background-position-y: 32%;
+		background-repeat: no-repeat;
+		background-size: 250%;
+		border: 3px solid var(--pink-color);
+		border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+		height: 350px;
+		position: relative;
+		transition: all 1s ease-in-out;
+		width: 350px;
+	}
+
+	@keyframes morph {
+		0% {
+			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+		}
+
+		50% {
+			border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+		}
+		100% {
+			border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	.about {
+		flex-direction: column-reverse;
+		height: auto;
+		text-align: center;
+
+		span {
+			width: 312px;
+			display: flex;
+			justify-content: center;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.about {
+		.about_img {
+			width: 280px;
+			height: 280px;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.about {
+		width: 90%;
+		justify-content: space-between;
+	}
+}
