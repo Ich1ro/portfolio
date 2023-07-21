@@ -4,6 +4,7 @@ import { tsParticlesConfig } from './data/tsParticles';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { IOptions, RecursivePartial } from 'tsparticles-engine';
+import About from './components/About/page';
 
 export default function Home() {
 	const particlesInit = useCallback(async (engine: any) => {
@@ -18,14 +19,16 @@ export default function Home() {
 	const [particles] = useState(tsParticlesConfig as unknown as RecursivePartial<IOptions>);
 
 	return (
-		<div>
+		<div className='container'>
 			<Particles
 				init={particlesInit}
 				loaded={particlesLoaded}
 				options={particles}
 				height="100vh"
 				width="100vw"
+				className="particles"
 			/>
+			<About />
 		</div>
 	);
 }
