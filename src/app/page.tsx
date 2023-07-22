@@ -4,7 +4,9 @@ import { tsParticlesConfig } from './data/tsParticles';
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import { IOptions, RecursivePartial } from 'tsparticles-engine';
+
 import About from './components/About/page';
+import DevTools from './components/DevTools/page';
 
 export default function Home() {
 	const particlesInit = useCallback(async (engine: any) => {
@@ -29,6 +31,7 @@ export default function Home() {
 				className="particles"
 			/>
 			<About />
+			<DevTools />
 		</div>
 	);
 }
