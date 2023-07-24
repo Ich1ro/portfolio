@@ -19,6 +19,14 @@ export const Technologies: Technology[] = [
 		primaryColor: '#326CE5'
 	},
 	{
+		name: 'Axios',
+		Icon: Icons.SiAxios,
+		description:
+			'A simple promise based HTTP client for the browser and node.js. Axios provides a simple to use library in a small package with a very extensible interface.',
+		url: 'https://axios-http.com',
+		primaryColor: '#5A29E4'
+	},
+	{
 		name: 'Wordpress',
 		Icon: Icons.SiWordpress,
 		description:
