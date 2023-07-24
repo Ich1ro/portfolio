@@ -46,7 +46,8 @@ import {
 	SiGraphql,
 	SiChakraui,
 	SiMui,
-	SiTailwindcss
+	SiTailwindcss,
+	SiAxios
 } from 'react-icons/si';
 
 export const Icons = {
@@ -97,5 +98,6 @@ export const Icons = {
 	SiGraphql,
 	SiChakraui,
 	SiMui,
-	SiTailwindcss
+	SiTailwindcss,
+	SiAxios
 };

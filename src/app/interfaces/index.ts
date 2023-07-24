@@ -60,6 +60,7 @@ export type stackTypes =
 	| 'GraphQL'
 	| 'ChakraUI'
 	| 'MaterialUI'
+	| 'Axios'
 	| 'TailwindCSS';
 
 export interface Technology {
