@@ -1,6 +1,16 @@
 import { FunctionComponent, SVGProps } from 'react';
 import { IconType } from 'react-icons/lib';
 
+export interface projectType {
+	title: string;
+	content: string;
+	link: string;
+	image: string;
+	stack: Array<stackTypes>;
+	direction?: 'row' | 'row-reverse';
+	github?: string;
+}
+
 export type stackTypes =
 	| 'Go'
 	| 'JavaScript'
@@ -61,7 +71,6 @@ export interface Technology {
 }
 
 export enum ColorTypes {
-    DEFAULT = "var(--text-color)",
-    NONE = "",
-  }
-  
+	DEFAULT = 'var(--text-color)',
+	NONE = ''
+}
