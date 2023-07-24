@@ -47,5 +47,6 @@ export const stacks: Array<stackTypes> = [
 	'GraphQL',
 	'ChakraUI',
 	'MaterialUI',
-	'TailwindCSS'
+	'TailwindCSS',
+	'Axios'
 ];
