@@ -30,7 +30,7 @@ export const Technologies: Technology[] = [
 		name: 'Wordpress',
 		Icon: Icons.SiWordpress,
 		description:
-			'A free and open-source content management system written in PHP and paired with a MySQL or MariaDB database. Features include a plugin architecture and a template system, referred to within WordPress as Themes',
+			'A free and open-source content management system written in PHP and paired with a MySQL or MariaDB database',
 		url: 'https://wordpress.org/download/',
 		primaryColor: '#21759B'
 	},
@@ -352,7 +352,7 @@ export const Technologies: Technology[] = [
 	{
 		name: 'WebAssembly',
 		description:
-			'A binary instruction format for a stack-based virtual machine, designed as a portable compilation target for programming languages, enabling deployment on the web for client and server applications',
+			'A binary instruction format for a stack-based virtual machine, designed as a portable compilation target',
 		Icon: Icons.SiWebassembly,
 		url: 'https://webassembly.org/',
 		primaryColor: '#654FF0'
