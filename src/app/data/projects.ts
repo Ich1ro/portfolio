@@ -6,7 +6,7 @@ export const projects = [
         content: `Weather App is a web application that provides users with the ability to view weather forecasts for their region.`,
         link: 'https://ich1ro.github.io/react-weather-app/',
         image: 'WeatherApp.png',
-        stack: ['TypeScript', 'React', 'Redux', 'NextJS', 'Github', 'Babel', 'Jest'],
+        stack: ['TypeScript', 'React', 'Redux', 'NextJS', 'Axios', 'Github', 'Babel', 'Jest'],
         github: 'https://github.com/Ich1ro/react-weather-app'
     } as projectType,
     {
@@ -30,7 +30,7 @@ export const projects = [
         content: `This project is a doctor appointment form built with TypeScript, React, Next.js, and React-hook-form. It allows users to book appointments with doctors, and it also features a search bar that allows users to find doctors by name, specialty, and location.`,
         link: 'https://react-form-ich1ro.vercel.app/',
         image: 'ReactForm.png',
-        stack: ['TypeScript', 'React', 'NextJS', 'Github', 'Vercel'],
+        stack: ['TypeScript', 'React', 'NextJS', 'Axios', 'Github', 'Vercel'],
         github: 'https://github.com/Ich1ro/react-form'
     } as projectType,
     {
