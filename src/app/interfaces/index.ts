@@ -11,6 +11,12 @@ export interface projectType {
 	github?: string;
 }
 
+export interface IFormInput {
+	name: string,
+	email: string,
+	message: string
+}
+
 export type stackTypes =
 	| 'Go'
 	| 'JavaScript'
