@@ -8,6 +8,7 @@ import { IOptions, RecursivePartial } from 'tsparticles-engine';
 import About from './components/About/page';
 import DevTools from './components/DevTools/page';
 import Projects from './components/Projects/page';
+import Form from './components/Form/page';
 
 export default function Home() {
 	const particlesInit = useCallback(async (engine: any) => {
@@ -34,6 +35,7 @@ export default function Home() {
 			<About />
 			<DevTools />
 			<Projects />
+			<Form />
 		</div>
 	);
 }
