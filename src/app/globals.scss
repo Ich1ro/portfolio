@@ -115,7 +115,7 @@ a {
 
 .technologies_container {
 	width: 100%;
-	padding: 40px 0;
+	padding-bottom: 20px;
 
 	& > div {
 		width: 75%;
@@ -124,7 +124,7 @@ a {
 	}
 
 	h1 {
-		margin: 20px 0;
+		padding: 20px 0;
 	}
 
 	.largeIcon {
@@ -147,11 +147,10 @@ a {
 }
 
 .projects_container {
-	padding: 10px 0px;
-
-	h1, h3 {
+	h1,
+	h3 {
 		text-align: center;
-		padding: 10px;
+		padding: 20px 0;
 	}
 }
 
@@ -162,8 +161,7 @@ a {
 	border: none;
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0);
-	width: 100;
-	margin: 30px;
+	margin: 0 30px;
 
 	.description {
 		width: 50%;
@@ -235,6 +233,7 @@ a {
 	line-height: 1.5em;
 	font-size: 1.1rem !important;
 	padding: 10px 20px !important;
+	z-index: 1;
 
 	a {
 		color: var(--background-color);
@@ -259,6 +258,39 @@ a {
 	transform: translateY(4px);
 }
 
+.form_container {
+	text-align: center;
+	min-height: 380px;
+	padding: 40px 0;
+	width: 100%;
+	
+	h2 {
+		padding-bottom: 20px;
+	}
+
+	.form {
+		display: flex;
+		flex-flow: column nowrap;
+		align-items: center;
+
+
+		.error {
+			display: flex;
+			align-items: flex-start;
+			width: 50%;
+			color: red;
+		}
+	}
+}
+
+.complete_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: column;
+	height: 380px;
+}
+
 @media (max-width: 900px) {
 	.about {
 		flex-direction: column-reverse;
@@ -273,11 +305,17 @@ a {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 	.about {
 		.about_img {
 			width: 280px;
 			height: 280px;
+		}
+	}
+
+	.form {
+		span {
+			width: 80%;
 		}
 	}
 }
