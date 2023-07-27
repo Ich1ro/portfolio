@@ -3,22 +3,6 @@ import { Icons } from './icons';
 
 export const Technologies: Technology[] = [
 	{
-		name: 'Bash',
-		Icon: Icons.SiGnubash,
-		description:
-			'Unix shell and command language written by Brian Fox for the GNU Project as a free software replacement for the Bourne shell',
-		url: 'https://www.gnu.org/software/bash/',
-		primaryColor: ColorTypes.DEFAULT
-	},
-	{
-		name: 'Kubernetes',
-		Icon: Icons.SiKubernetes,
-		description:
-			'An open-source system for automating deployment, scaling, and management of containerized applications',
-		url: 'https://kubernetes.io/',
-		primaryColor: '#326CE5'
-	},
-	{
 		name: 'Axios',
 		Icon: Icons.SiAxios,
 		description:
@@ -57,22 +41,6 @@ export const Technologies: Technology[] = [
 		primaryColor: '#1572B6'
 	},
 	{
-		name: 'Deno',
-		Icon: Icons.SiDeno,
-		description:
-			'A simple, modern and secure runtime for JavaScript and TypeScript that uses V8 and is built in Rust',
-		url: 'https://deno.land',
-		primaryColor: ColorTypes.DEFAULT
-	},
-	{
-		name: 'DigitalOcean',
-		description:
-			'Helping millions of developers easily build, test, manage, and scale applications of any size – faster than ever before.',
-		Icon: Icons.SiDigitalocean,
-		url: 'https://digitalocean.com',
-		primaryColor: '#0080FF'
-	},
-	{
 		name: 'Docker',
 		description:
 			'A set of platform as a service products that use OS-level virtualization to deliver software in packages called containers',
@@ -95,43 +63,11 @@ export const Technologies: Technology[] = [
 		primaryColor: '#4285F4'
 	},
 	{
-		name: 'Gatsby',
-		description:
-			'A free and open source framework based on React that helps developers build blazing fast websites and apps',
-		Icon: Icons.SiGatsby,
-		url: 'https://www.gatsbyjs.com/',
-		primaryColor: '#663399'
-	},
-	{
-		name: 'Git',
-		description:
-			'A free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency',
-		Icon: Icons.SiGit,
-		url: 'https://git-scm.com/',
-		primaryColor: '#F05032'
-	},
-	{
 		name: 'Github',
 		description: 'A provider of Internet hosting for software development and version control using Git',
 		Icon: Icons.SiGithub,
 		url: 'https://github.com/',
 		primaryColor: ColorTypes.DEFAULT
-	},
-	{
-		name: 'GithubActions',
-		description:
-			'GitHub Actions helps you build, test, and deploy applications, but you can also use it to automate other tasks common to your developer workflows',
-		Icon: Icons.SiGithubactions,
-		url: 'https://github.com/features/actions',
-		primaryColor: '#2088FF'
-	},
-	{
-		name: 'Gitlab',
-		description:
-			'A web-based DevOps lifecycle tool that provides a Git-repository manager providing wiki, issue-tracking and continuous integration and deployment pipeline features',
-		Icon: Icons.SiGitlab,
-		url: 'https://about.gitlab.com/',
-		primaryColor: '#FCA121'
 	},
 	{
 		name: 'Go',
@@ -169,13 +105,6 @@ export const Technologies: Technology[] = [
 		Icon: Icons.SiJest,
 		url: 'https://jestjs.io/',
 		primaryColor: '#C21325'
-	},
-	{
-		name: 'Linux',
-		description: 'A family of open-source Unix-like operating systems based on the Linux kernel',
-		Icon: Icons.SiLinux,
-		url: 'https://www.linux.org/',
-		primaryColor: '#FCC624'
 	},
 	{
 		name: 'Markdown',
@@ -261,14 +190,6 @@ export const Technologies: Technology[] = [
 		primaryColor: '#CC6699'
 	},
 	{
-		name: 'Sentry',
-		description:
-			'Self-hosted and cloud-based error monitoring that helps software teams discover, triage, and prioritize errors in real-time',
-		Icon: Icons.SiSentry,
-		url: 'https://sentry.io/',
-		primaryColor: '#FB4226'
-	},
-	{
 		name: 'Svelte',
 		description:
 			"A new way to build web applications. It's a compiler that takes your declarative components and converts them into efficient JavaScript that surgically updates the DOM",
@@ -283,14 +204,6 @@ export const Technologies: Technology[] = [
 		Icon: Icons.SiTypescript,
 		url: 'https://www.typescriptlang.org/',
 		primaryColor: '#007ACC'
-	},
-	{
-		name: 'Ubuntu',
-		description:
-			'The modern, open source operating system on Linux for the enterprise server, desktop, cloud, and IoT',
-		Icon: Icons.SiUbuntu,
-		url: 'https://ubuntu.com/',
-		primaryColor: '#E95420'
 	},
 	{
 		name: 'Vercel',
