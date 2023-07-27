@@ -70,3 +70,8 @@ export enum ColorTypes {
 	DEFAULT = 'var(--text-color)',
 	NONE = ''
 }
+
+export interface SocialMediaLink {
+	url: string;
+	icon: IconType;
+  }
