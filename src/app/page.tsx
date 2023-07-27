@@ -9,6 +9,7 @@ import About from './components/About/page';
 import DevTools from './components/DevTools/page';
 import Projects from './components/Projects/page';
 import Form from './components/Form/page';
+import SocialMedia from './components/SocialMedia/page';
 
 export default function Home() {
 	const particlesInit = useCallback(async (engine: any) => {
@@ -36,6 +37,7 @@ export default function Home() {
 			<DevTools />
 			<Projects />
 			<Form />
+			<SocialMedia />
 		</div>
 	);
 }
