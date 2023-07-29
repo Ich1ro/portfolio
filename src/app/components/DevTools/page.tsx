@@ -1,6 +1,7 @@
 import React from 'react';
 import DevIcons from '../DevIcons/page';
 import { stacks } from '../../data/technologies';
+import './DevTools.modules.scss'
 
 const DevTools = () => {
 	return (

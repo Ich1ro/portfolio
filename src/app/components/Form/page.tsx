@@ -4,6 +4,7 @@ import { Button } from '../Primitives/Button';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { IFormInput } from '@/app/interfaces';
 import emailjs from '@emailjs/browser';
+import './Form.modules.scss'
 
 const Form = () => {
 

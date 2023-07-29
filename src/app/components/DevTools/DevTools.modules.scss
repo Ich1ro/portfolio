@@ -1,0 +1,32 @@
+.technologies_container {
+	width: 100%;
+	padding-bottom: 20px;
+
+	& > div {
+		width: 75%;
+		text-align: center;
+		margin: auto;
+	}
+
+	h1 {
+		padding: 20px 0;
+	}
+
+	.largeIcon {
+		height: 60px;
+		width: 60px;
+		margin: 15px;
+	}
+
+	@media only screen and (max-width: 600px) {
+		& > div {
+			width: 90%;
+		}
+
+		.largeIcon {
+			height: 45px;
+			width: 45px;
+			margin: 10px;
+		}
+	}
+}
