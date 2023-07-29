@@ -1,38 +1,38 @@
 'use client';
-import { Suspense, lazy, useRef, useState, useEffect, useCallback } from 'react';
-import { tsParticlesConfig } from './data/tsParticles';
-import Particles from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
-import { IOptions, RecursivePartial } from 'tsparticles-engine';
+import dynamic from 'next/dynamic';
+import { Triangle } from 'react-loader-spinner';
 
 import About from './components/About/page';
-import DevTools from './components/DevTools/page';
-import Projects from './components/Projects/page';
-import Form from './components/Form/page';
 import SocialMedia from './components/SocialMedia/page';
+import Form from './components/Form/page';
+
+const TriangleLoader = () => {
+	return (
+		<Triangle
+			height="80"
+			width="80"
+			color="#ff8ba7"
+			ariaLabel="triangle-loading"
+			wrapperStyle={{ display: 'flex', justifyContent: 'center', padding: '15px' }}
+			visible={true}
+		/>
+	);
+};
+
+const Particles = dynamic(() => import('./components/ParticlesWrapper/page'), { ssr: false });
+const DevTools = dynamic(() => import('./components/DevTools/page'), {
+	ssr: false,
+	loading: () => <TriangleLoader />
+});
+const Projects = dynamic(() => import('./components/Projects/page'), {
+	ssr: false,
+	loading: () => <TriangleLoader />
+});
 
 export default function Home() {
-	const particlesInit = useCallback(async (engine: any) => {
-		console.log(engine);
-		await loadFull(engine);
-	}, []);
-
-	const particlesLoaded = useCallback(async (container: any) => {
-		await console.log(container);
-	}, []);
-
-	const [particles] = useState(tsParticlesConfig as unknown as RecursivePartial<IOptions>);
-
 	return (
-		<div className='container'>
-			<Particles
-				init={particlesInit}
-				loaded={particlesLoaded}
-				options={particles}
-				height="100vh"
-				width="100vw"
-				className="particles"
-			/>
+		<div className="container">
+			<Particles />
 			<About />
 			<DevTools />
 			<Projects />
