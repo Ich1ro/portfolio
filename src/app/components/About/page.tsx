@@ -1,19 +1,21 @@
-'use client'
+'use client';
 import React from 'react';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
-import { TextLoop } from 'react-text-loop-next';
-import './About.modules.scss'
+import Typewriter from 'typewriter-effect';
+import './About.modules.scss';
 
 const About = () => {
 	return (
 		<div className="about">
 			<div className="about_info">
 				<h1>
-					<TextLoop>
-						<span style={{ color: 'var(--pink-color)' }}>Front-end Developer</span>
-						<span style={{ color: '#ff8906' }}>Graphic Designer</span>
-						<span style={{ color: '#4285F4' }}>Web Developer</span>
-					</TextLoop>
+					<Typewriter
+						options={{
+							strings: ['Web Developer', 'Front-end Developer', 'Graphic Designer'],
+							autoStart: true,
+							loop: true
+						}}
+					/>
 				</h1>
 				<p>{`Hi, I'm Ich1ro. A passionate Web Developer based in Ukraine. 📍`}</p>
 				<div className="resume">
