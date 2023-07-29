@@ -8,7 +8,7 @@ interface Props {
 	children: ReactElement;
 }
 
-const ToolTip: FC<Props> = ({ id, content, children }) => (
+const ToolTip = ({ id, content, children }: Props) => (
 	<>
     {children}
     <Tooltip

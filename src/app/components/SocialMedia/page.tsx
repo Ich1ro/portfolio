@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { LinkToNewTab } from "../Primitives/Links";
 import { SocialMediaLinks } from "../../data/SocialMediaLinks";

@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { FaCloudDownloadAlt } from 'react-icons/fa';
 import { TextLoop } from 'react-text-loop-next';

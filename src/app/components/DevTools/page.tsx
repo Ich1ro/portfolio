@@ -8,7 +8,7 @@ const DevTools = () => {
 		<div className="technologies_container">
 			<div>
 				<h1>Technologies I know</h1>
-				<DevIcons stacks={stacks.sort()} className={'largeIcon'} />
+				<DevIcons stacks={stacks.sort()} className='largeIcon'/>
 			</div>
 		</div>
 	);
