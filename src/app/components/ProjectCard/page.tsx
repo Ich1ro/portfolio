@@ -5,7 +5,6 @@ import { LinkToNewTab } from '../Primitives/Links';
 import { Tilt } from 'react-tilt';
 import { Button, ButtonAlternate } from '../Primitives/Button';
 import { RoundedImage } from '../Primitives/Images';
-import './ProjectCard.modules.scss';
 
 const ProjectCard = ({ title, content, link, image, direction, stack, github }: projectType) => {
 	return (
