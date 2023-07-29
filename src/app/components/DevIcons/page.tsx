@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import { stackTypes, Technology } from '@/app/interfaces';
 import { Technologies } from '@/app/data/technologyInfo';

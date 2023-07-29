@@ -1,3 +1,4 @@
+'use client'
 import React, {useCallback, useState} from 'react';
 import Particles from 'react-tsparticles';
 import { tsParticlesConfig } from '../../data/tsParticles';

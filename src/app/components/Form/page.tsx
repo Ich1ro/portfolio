@@ -1,3 +1,4 @@
+'use client'
 import { useEffect } from 'react';
 import { TextInput, TextArea } from '../Primitives/Inputs';
 import { Button } from '../Primitives/Button';

@@ -1,3 +1,4 @@
+'use client'
 import { projectType } from '@/app/interfaces';
 import React from 'react';
 import DevIcons from '../DevIcons/page';

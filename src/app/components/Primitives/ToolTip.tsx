@@ -1,3 +1,4 @@
+'use client'
 import { FC, ReactNode, ReactElement } from 'react';
 import { Tooltip } from 'react-tooltip';
 
