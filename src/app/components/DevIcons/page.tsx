@@ -1,22 +1,16 @@
-'use client'
+'use client';
 import React from 'react';
-import { stackTypes, Technology } from '@/app/interfaces';
+import { Technology } from '@/app/interfaces';
 import { Technologies } from '@/app/data/technologyInfo';
 import { LinkToNewTab } from '../Primitives/Links';
 import ToolTip from '../Primitives/ToolTip';
 
-interface Props {
-	stacks: stackTypes[];
-	className: string;
-}
-
-const DevIcons = ({ stacks, className }: Props) => {
+const DevIcons = ({ stacks, className }: any) => {
 	const rest = {
-		className,
 		style: { stroke: 'var(--text-color)', strokeWidth: 0.3, cursor: 'pointer' }
 	};
 
-	const icons = stacks.map(s => {
+	const icons = stacks?.map((s: any) => {
 		const Component = Technologies.find(t => t.name === s) as Technology;
 		return (
 			<ToolTip
@@ -33,6 +27,7 @@ const DevIcons = ({ stacks, className }: Props) => {
 						href={Component.url}
 						data-tooltip-id={`icon-${s}`}
 						fill={Component.primaryColor}
+						className={className}
 						{...rest}
 					/>
 				</LinkToNewTab>
